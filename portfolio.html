@@ -10,6 +10,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/styles.css">
+    <style>
+        li {
+            list-style-type: none;
+            /* Убираем маркеры */
+        }
+    </style>
 
 </head>
 <body>
@@ -32,73 +38,145 @@
 </header>
 <!-- main section -->
 <main>
-    <section>
-        <div></div>
-        <h1>Портфолио</h1>
-        <ul class="list">
-            <li><button type="button" class="filter-buttons">Все</button></li>
-            <li><button type="button" class="filter-buttons">Веб-сайты</button></li>
-            <li><button type="button" class="filter-buttons">Приложения</button></li>
-            <li><button type="button" class="filter-buttons">Дизайн</button></li>
-            <li><button type="button" class="filter-buttons">Маркетинг</button></li>
-        </ul>
-
-        <ul class="list">
-            <li class="card">
-                <a class="card-link" href=""><img src="./images/tehno.jpg" alt="нутбук с карточками" width="370" />
-                    <h2 class="card-name">Технокряк</h2>
-                    <p class="card-type">Веб-сайт</p>
-                </a>
-            </li>
-            <li class="card">
-                <a class="card-link" href=""><img src="./images/poster.jpg" alt="баскетболисты" width="370" />
-                    <h2 class="card-name">Постер New Orlean vs Golden Star</h2>
-                    <p class="card-type">Дизайн</p>
-                </a>
-            </li>
-            <li class="card">
-                <a class="card-link" href=""><img src="./images/restoran.jpg" alt="логотип ресторана" width="370" />
-                    <h2 class="card-name">Ресторан Seafood</h2>
-                    <p class="card-type">Приложение</p>
-                </a>
-            </li>
-            <li class="card">
-                <a class="card-link" href=""><img src="./images/prime.jpg" alt="наушники" width="370" />
-                    <h2 class="card-name">Проект Prime</h2>
-                    <p class="card-type">Маркетинг</p>
-                </a>
-            </li>
-            <li class="card">
-                <a class="card-link" href=""><img src="./images/boxes.jpg" alt="коробки" width="370" />
-                    <h2 class="card-name">Проект Boxes</h2>
-                    <p class="card-type">Приложение</p>
-                </a>
-            </li>
-            <li class="card">
-                <a class="card-link" href=""><img src="./images/inspiration.jpg" alt="монитор с надписью вдохновение не имеет границ" width="370" />
-                    <h2 class="card-name">Inspiration has no Borders</h2>
-                    <p class="card-type">Веб-сайт</p>
-                </a>
-            </li>
-            <li class="card">
-                <a class="card-link" href=""><img src="./images/limited_edition.jpg" alt="Издание Limited Edition" width="370" />
-                    <h2 class="card-name">Издание Limited Edition</h2>
-                    <p class="card-type">Дизайн</p>
-                </a>
-            </li>
-            <li class="card">
-                <a class="card-link" href=""><img src="./images/lab.jpg" alt="емблема продукта" width="370" />
-                    <h2 class="card-name">Проект LAB</h2>
-                    <p class="card-type">Маркетинг</p>
-                </a>
-            </li>
-            <li class="card">
-                <a class="card-link" href=""><img src="./images/laptop.jpg" alt="ноутбук" width="370" />
-                    <h2 class="card-name">Growing Business</h2>
-                    <p class="card-type">Приложение</p>
-                </a>
-            </li>
-        </ul>
+    <section class="section">
+        <div class="conteiner">
+            <h1 class="hidden">Портфолио</h1>
+            <ul class="list buttons">
+                <li><button type="button" class="filter-buttons">Все</button></li>
+                <li><button type="button" class="filter-buttons">Веб-сайты</button></li>
+                <li><button type="button" class="filter-buttons">Приложения</button></li>
+                <li><button type="button" class="filter-buttons">Дизайн</button></li>
+                <li><button type="button" class="filter-buttons">Маркетинг</button></li>
+            </ul>
+            <ul class="card-list list">
+                <li class="card">
+                    <a class="card-link" href="">
+                        <img
+                            class="cards-img"
+                            src="./images/tehno.jpg" 
+                            alt="нутбук с карточками" 
+                            width="370" 
+                        />
+                        <div class="border">
+                            <h2 class="card-name">Технокряк</h2>
+                            <p class="card-type">Веб-сайт</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="card">
+                    <a class="card-link" href="">
+                        <img
+                            class="cards-img"
+                            src="./images/poster.jpg" 
+                            alt="баскетболисты" 
+                            width="370" 
+                        />
+                        <div class="border">
+                            <h2 class="card-name">Постер New Orlean vs Golden Star</h2>
+                            <p class="card-type">Дизайн</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="card">
+                    <a class="card-link" href="">
+                        <img
+                            class="cards-img"
+                            src="./images/restoran.jpg" 
+                            alt="логотип ресторана" 
+                            width="370" 
+                        />
+                        <div class="border">
+                            <h2 class="card-name">Ресторан Seafood</h2>
+                            <p class="card-type">Приложение</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="card">
+                    <a class="card-link" href="">
+                        <img
+                            class="cards-img"
+                            src="./images/prime.jpg" 
+                            alt="наушники" 
+                            width="370" 
+                        />
+                        <div class="border">
+                            <h2 class="card-name">Проект Prime</h2>
+                            <p class="card-type">Маркетинг</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="card">
+                    <a class="card-link" href="">
+                        <img
+                            class="cards-img"
+                            src="./images/boxes.jpg" 
+                            alt="коробки" 
+                            width="370" 
+                        />
+                        <div class="border">
+                            <h2 class="card-name">Проект Boxes</h2>
+                            <p class="card-type">Приложение</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="card">
+                    <a class="card-link" href="">
+                        <img
+                            class="cards-img"
+                            src="./images/inspiration.jpg" 
+                            alt="монитор с надписью вдохновение не имеет границ" 
+                            width="370" 
+                        />
+                        <div class="border">
+                            <h2 class="card-name">Inspiration has no Borders</h2>
+                            <p class="card-type">Веб-сайт</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="card">
+                    <a class="card-link" href="">
+                        <img
+                            class="cards-img"
+                            src="./images/limited_edition.jpg" 
+                            alt="Издание Limited Edition" 
+                            width="370" 
+                        />
+                        <div class="border">
+                            <h2 class="card-name">Издание Limited Edition</h2>
+                            <p class="card-type">Дизайн</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="card">
+                    <a class="card-link" href="">
+                        <img
+                            class="cards-img"
+                            src="./images/lab.jpg" 
+                            alt="емблема продукта" 
+                            width="370" 
+                        />
+                        <div class="border">
+                            <h2 class="card-name">Проект LAB</h2>
+                            <p class="card-type">Маркетинг</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="card">
+                    <a class="card-link" href="">
+                        <img
+                            class="cards-img"
+                            src="./images/laptop.jpg" 
+                            alt="ноутбук" 
+                            width="370" 
+                        />
+                        <div class="border">
+                            <h2 class="card-name">Growing Business</h2>
+                            <p class="card-type">Приложение</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </section>
 </main>
 
